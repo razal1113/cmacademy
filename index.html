@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/cm.jpg" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <title>CM ACADEMY - ENTRANCE COACHING CENTER </title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo" style="text-decoration: none;">
+                    <i class=""></i> CM ACADEMY
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link" style="text-decoration: none;">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link"style="text-decoration: none;">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link" style="text-decoration: none;">Products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faqs" class="nav__link" style="text-decoration: none;">FAQs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link" style="text-decoration: none;">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    
+                    <img src="assets/img/hero-banner.png" alt="" class="home__img">
+                    
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            YOUR PATHWAY TO  <br>EXCELLENCE
+                        </h1>
+                        <p class="home__description">
+                            "Welcome to CM Academy, Kerala’s premier coaching institute for NEET, engineering exams, and Higher Secondary Science. With expert faculty, personalized guidance, and top-notch materials, we ensure your success. Join us for a transformative learning journey!"
+                        </p>
+                       
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets/img/new1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/img/new.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/img/new1.jpg.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Us</span>
+
+                        <div class="home__social-links">
+                            <a href="https://www.facebook.com/share/1F3tYg1Amt/" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/cmacademy_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://wa.me/918592944000" target="_blank" class="home__social-link">
+                                <i class="ri-whatsapp-fill"></i>
+                                
+                            </a>
+                            
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    
+                    <img src="assets/img/about.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Who we really are & <br> why choose us
+                        </h2>
+
+                        <p class="about__description">
+                            With over 500+ glowing reviews, students trust CM Academy for our exceptional coaching and results-driven approach.
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Proven Results: Our students consistently achieve top ranks in NEET and engineering exams
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                On-Time Support: We ensure timely guidance and assistance throughout your preparation journey.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Comprehensive Resources: Get access to expert-curated study materials and strategies.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Post-Exam Care: We provide continued mentorship even after your exams.
+                            </p>
+                        </div>
+
+                        <a href="#" class="button--link button--flex">
+                             </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Steps to start your <br> plants off right
+                    </h2>
+
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">NEET/JEE</h3>
+                            <p class="steps__card-description">
+                                Entrance coaching focused on NEET & JEE (residence batch only)
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <h3 class="steps__card-title">PUBLIC SCHOOL</h3>
+                            <p class="steps__card-description">
+                                Public School With Integrated Entrance Coaching For Higher Secondary Science Students .
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">TUITION</h3>
+                            <p class="steps__card-description">
+                                Tuition For All Higher Secondary Batches.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+           
+            
+
+            <!--==================== QUESTIONS ====================-->
+            <section class="questions section" id="faqs">
+                <h2 class="section__title-center questions__title container">
+                    Some common questions <br> were often asked
+                </h2>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What services does CM Academy provide?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    CM Academy offers a wide range of educational programs, including: <br> <br>
+
+                                    -> Entrance coaching for competitive exams like NEET and JEE. <br>
+                                    -> Higher secondary tuition for Science stream students, focusing on board exams. <br>
+                                    -> A hybrid public school program that combines board exam preparation with entrance coaching for Science batch students. <br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What is the hybrid public school program at CM Academy?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    The hybrid public school program is designed for Science batch students and integrates: <br> <br>
+
+                                    -> Board syllabus preparation with specialized coaching for competitive exams like NEET and JEE. <br>
+                                    -> A combination of online and offline learning for maximum flexibility and efficiency. <br>
+                                    -> Regular tests and progress tracking to ensure students excel in both board exams and entrance tests. <br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Does CM Academy offer a residential batch for repeat entrance coaching? 
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Yes, CM Academy provides a residential batch for students who wish to repeat their entrance exam preparation. This program includes: <br> <br>
+
+                                -> On-campus accommodation and full-time mentoring.
+                                -> A structured daily schedule with classes, self-study, and regular tests.
+                                -> Comprehensive resources and support to help students improve their performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Who can enroll in the higher secondary tuition program at CM Academy?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    The higher secondary tuition program is open to Science stream students in grades 11 and 12. The program is designed to help students: <br> <br>
+
+                                   -> Master their board exam syllabus. <br>
+                                   -> Build a strong foundation for entrance exams. <br>
+                                   -> Get personalized attention with doubt-clearing sessions and expert guidance. <br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What study materials and resources does CM Academy provide?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    CM Academy provides: <br> <br>
+
+                                    ->Detailed study materials for both board exams and competitive entrance exams. <br>
+                                    ->Access to mock tests, previous years’ papers, and practice questions. <br>
+                                    ->Mock tests and question papers prepared by teachers with 20+ years of experience in this field. <br>
+                                
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What makes CM Academy's programs accessible to all students?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    CM Academy is committed to offering quality education that is accessible to everyone through: <br> <br>
+
+                                    ->Affordable Pricing: Programs are designed to provide high value at competitive rates. <br>
+                                    ->Comprehensive Resources: Students receive access to detailed study materials, online resources, and mock tests to aid their preparation. <br>
+                                    ->Expert Guidance: Experienced faculty ensure personalized attention and support for every student to excel. <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Reach out to us today <br> via any of the given <br> information
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +918592944000
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    cmacademyoffice@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="hidden" name="access_key" value="ece568e6-d295-4ec4-97c3-56767af46487">
+                            <div class="contact__content">
+                                <input type="text" name="name" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Name</label>
+                            </div>
+                    
+                            <div class="contact__content">
+                                <input type="email" name="email" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+                    
+                            <div class="contact__content">
+                                <input type="number" name="phone" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Phone Number</label>
+                            </div>
+                            
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Message</label>
+                            </div>
+                        </div>
+                    
+                        <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class=""></i> CM ACADEMY
+                    </a>
+
+                    <h3 class="footer__title">
+                        Subscribe to our newsletter <br> to stay update
+                    </h3>
+
+                    <div class="footer__subscribe">
+                        <input type="email" placeholder="Enter your email" class="footer__input">
+
+                        <button class="button button--flex footer__button">
+                            Subscribe
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Address</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">Hayath tower-Civil Station Rd</li>
+                        <li class="footer__information">near municipal office-Down Hill</li>
+                        <li class="footer__information">Malappuram-Kerala-676505</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Us</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">+918592944000</li>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-whatsapp-line"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        
+                    </h3>
+
+                    
+                </div>
+            </div>
+
+           
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+        <!-- WhatsApp and Phone Contact Links -->
+<div class="contact-links">
+    <a href="https://wa.me/+918592944000" target="_blank" class="whatsapp-link">
+      <i class="ri-whatsapp-fill"></i>
+    </a>
+    <a href="tel:+918592944000" class="phone-link">
+      <i class="ri-phone-fill"></i>
+    </a>
+  </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
