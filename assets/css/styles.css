@@ -271,6 +271,11 @@ the website, in dark theme
 .dark-theme .card-text{
   color: var(--text-color);
 }
+.dark-theme .text-left {
+  text-align: left;
+  padding-right: 20px;
+}
+
 /*========== Color changes in some parts of the website, in dark theme ==========*/
 .dark-theme .about *{
   color: var(--text-color);
@@ -663,31 +668,20 @@ the website, in dark theme
   width: 280px;
   justify-self: center;
 }
-
-.about__title{
-  margin-bottom: var(--mb-1);
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
 }
 
-.about__description{
-  margin-bottom: var(--mb-2);
-}
-
-.about__details{
-  display: grid;
-  row-gap: 1rem;
-  margin-bottom: var(--mb-2-5);
-}
-
-.about__details-description{
-  display: inline-flex;
-  column-gap: .5rem;
-  font-size: var(--small-font-size);
-}
-
-.about__details-icon{
-  font-size: 1rem;
-  color: var(--first-color);
-  margin-top: .15rem;
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*=============== STEPS ===============*/
@@ -970,13 +964,16 @@ the website, in dark theme
 /*=============== FOOTER ===============*/
 .footer__container{
   row-gap: 3rem;
+  background-color: var(--first-color);
+  padding: 4rem 0;
+  height: 20rem;
 }
 
 .footer__logo{
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
-  color: var(--title-color);
+  color: #FFF;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -1px;
@@ -986,20 +983,21 @@ the website, in dark theme
 
 .footer__logo-icon{
   font-size: 1.15rem;
-  color: var(--first-color);
+  color: #FFF;
 }
 
 .footer__logo:hover{
-  color: var(--first-color);
+  color: #FFF;
 }
 
 .footer__title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1-5);
+  color: #FFF;
 }
 
 .footer__subscribe{
-  background-color: var(--first-color-lighten);
+  background-color: #FFF;
   padding: .75rem;
   display: flex;
   justify-content: space-between;
@@ -1010,13 +1008,15 @@ the website, in dark theme
   width: 70%;
   padding: 0 .5rem;
   background: none;
-  color: var(--text-color);
+  color: var(--first-color);
   border: none;
   outline: none;
 }
 
 .footer__button{
   padding: 1rem;
+  background-color: #FFF;
+  color: var(--first-color);
 }
 
 .footer__data{
@@ -1026,6 +1026,7 @@ the website, in dark theme
 
 .footer__information{
   font-size: var(--small-font-size);
+  color: #FFF;
 }
 
 .footer__social{
@@ -1035,27 +1036,30 @@ the website, in dark theme
 
 .footer__social-link{
   font-size: 1rem;
-  color: var(--text-color);
+  color: #FFF;
   transition: .3s;
 }
 
 .footer__social-link:hover{
-  transform: translateY(-.25rem);
+  color: var(--first-color-alt);
 }
 
 .footer__cards{
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
+  background-color: #FFF;
 }
+
 .footer__card{
   width: 35px;
+  background-color: #FFF;
 }
 
 .footer__copy{
   text-align: center;
   font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
+  color: #FFF;
   margin: 5rem 0 1rem;
 }
 
@@ -1138,6 +1142,11 @@ the website, in dark theme
   }
   .home__title{
     font-size: var(--h1-font-size);
+
+  }
+
+  .video-container {
+    padding-bottom: 100%; /* 1:1 aspect ratio for very small screens */
   }
 
   .steps__bg{
@@ -1220,12 +1229,11 @@ the website, in dark theme
     align-items: flex-start;
   }
 
-  .footer__container{
-    column-gap: 3rem;
-  }
+  
   .footer__subscribe{
     width: initial;
   }
+  
 }
 
 /* For large devices */
@@ -1256,6 +1264,7 @@ the website, in dark theme
   .about__img{
     width: 380px;
   }
+  
 
   .steps__container{
     grid-template-columns: repeat(3, 1fr);
@@ -1312,6 +1321,9 @@ the website, in dark theme
   .footer__copy{
     margin: 7rem 0 2rem;
   }
+  .footer__container{
+    grid-template-columns: 1fr .5fr .5fr .5fr;
+  }
 }
 
 @media screen and (min-width: 1200px){
@@ -1319,6 +1331,7 @@ the website, in dark theme
     right: -3rem;
     row-gap: 4.5rem;
   }
+  
   .home__social-follow{
     font-size: var(--small-font-size);
   }
@@ -1330,6 +1343,9 @@ the website, in dark theme
     font-size: 1.15rem;
   }
 
+ .video-container {
+    padding-bottom: 60%; /* adjust the padding for larger screens */
+  }
   .about__container{
     column-gap: 7rem;
   }
@@ -1343,4 +1359,26 @@ the website, in dark theme
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
   justify-items: center;
+}
+
+.footer__container{
+  row-gap: 3rem;
+  background-color: var(--first-color);
+  padding: 4rem 0;
+  height: 100%;
+  margin-bottom: 0;
+  grid-template-columns: 1fr;
+}
+
+.footer__data, .footer__social, .footer__cards{
+  grid-column: 1;
+}
+
+@media screen and (min-width: 768px){
+  .footer__container{
+    grid-template-columns: 1fr .5fr .5fr .5fr;
+  }
+  .footer__data, .footer__social, .footer__cards{
+    grid-column: auto;
+  }
 }
