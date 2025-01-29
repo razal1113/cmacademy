@@ -184,6 +184,9 @@ the website, in dark theme
   background-color: var(--body-color);
 }
 
+.dark-theme .about_heading{
+  margin-left: 20px;
+}
 .dark-theme .about__title{
   color: var(--title-color);
 }
@@ -232,11 +235,14 @@ the website, in dark theme
 
 .dark-theme .footer__title{
   color: var(--title-color);
+  margin-left: 30px;
 }
 
 .dark-theme .footer__information{
   color: var(--text-color);
+  margin-left: 20px;
 }
+
 
 .dark-theme .footer__social-link{
   color: var(--text-color);
@@ -684,6 +690,10 @@ the website, in dark theme
   height: 100%;
 }
 
+marquee {
+  font-family: 'Poppins', sans-serif;
+}
+
 /*=============== STEPS ===============*/
 .steps__bg{
   background-color: var(--first-color);
@@ -1110,7 +1120,18 @@ the website, in dark theme
   z-index: 1000;
 }
 
-.whatsapp-link, .phone-link {
+.whatsapp-link {
+  display: block;
+  margin-bottom: 10px;
+  padding: .5rem;
+  background-color: #34C759; /* Bright green color */
+  border-radius: .25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.phone-link {
   display: block;
   margin-bottom: 10px;
   padding: .5rem;
@@ -1380,5 +1401,19 @@ the website, in dark theme
   }
   .footer__data, .footer__social, .footer__cards{
     grid-column: auto;
+  }
+}
+
+.responsive-logo {
+  width: 300%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+  .responsive-logo {
+    width: 150%;
+    max-width: 150px;
   }
 }
